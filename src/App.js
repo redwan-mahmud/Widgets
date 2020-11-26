@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Accordion from './components/Accordion'
 import Search from './components/Search'
+import Dropdown from './components/Dropdown'
+import Translate from './components/Translate'
 
 const items = [
   {
@@ -17,11 +19,28 @@ const items = [
     content: 'Making components'
   }
 ]
+
+const options = [
+  {
+    label: 'The color Red',
+    value: 'Red'
+  },
+  {
+    label: 'The color Green',
+    value: 'Green'
+  }, 
+  {
+    label: 'The color Blue',
+    value: 'Blue'
+  }
+]
 function App() {
+  
+
+
   return (
     <div >
-    
-     <Search/>
+     <Translate/>
     </div>
   );
 }
